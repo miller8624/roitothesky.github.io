@@ -1,51 +1,16 @@
-## [Landwind - Tailwind CSS Landing Page](https://https://demo.themesberg.com/landwind/)
+# ROI To The Sky
 
-<a href="https://https://demo.themesberg.com/landwind/" rel="Tailwind CSS Landing Page">![Tailwind CSS Landing Page Demo - Flowbite](https://themesberg.s3.us-east-2.amazonaws.com/public/github/landwind/thumbnail.png)</a>
+Static marketing portfolio for [roitothesky.com](https://roitothesky.com/), served directly from GitHub Pages. The homepage is in `index.html`, case studies are under `work/`, and all pages use `site.css`.
 
-Landwind is a free and open-source landing page built for SaaS and product websites based on the Tailwind CSS utility-first framework and the Flowbite Component Library featuring a hero section, customer logos, feature sections, testimonials, pricing cards, FAQ section, pre-footer CTA button and a footer.
+To preview from the repository root, run `python3 -m http.server 8765` and open [the local site](http://localhost:8765/). The website has no build step or runtime dependencies.
 
-Built with ❤️ by [Themesberg](https://themesberg.com) based on Tailwind CSS and Flowbite.
+When adding a case study, add its URL to `sitemap.xml` and link to it from the homepage. Keep `CNAME` in place for the custom domain.
 
-## Live preview
+The hero artwork was generated with OpenAI ImageGen. The aviation and brewery photos are from the corresponding client sites. The Gallagher’s print in the case study is an illustration. Font licenses are in `fonts/`.
 
-Check out a live demo by clicking here:
+<details>
+<summary>Hero artwork prompt</summary>
 
-🔗 [Landwind live preview](https://https://demo.themesberg.com/landwind/) (🌗 switch on dark mode using your computer preferences)
+Wide cinematic editorial photograph for the hero of a premium independent marketing studio called ROI To The Sky. View from above immense textured cumulus clouds at blue hour, narrow vivid cobalt blue horizon and soft glowing ivory cloud tops, deeper ink navy and almost-black atmosphere toward the left third for legible white headline overlay. Main dramatic luminous cloud mass on the lower right, clouds rising toward center right, dark open blue sky across top. Sophisticated monochrome blue palette, photographic detail, subtle film grain, strong cinematic depth, quietly optimistic, landscape 3:2 with safe crop to ultrawide. Only sky and clouds. No aircraft, people, graphics, lettering, logos or watermark.
 
-## Getting started
-
-Make sure that you have [Node.js](https://nodejs.org/en/), [Tailwind CSS](https://tailwindcss.com/docs/installation) and [Flowbite](https://flowbite.com/docs/getting-started/quickstart/) installed.
-
-1. Run `npm install` inside your terminal
-
-2. Watch for files and compile Tailwind CSS + Flowbite:
-
-```
-npx tailwindcss -i ./input.css -o ./output.css --watch
-```
-
-3. To deploy you will only need the `index.html` file and the `output.css` styles.
-
-Alternatively you can also just directly copy this code into your own projects, whether you use Laravel, React, Vue.js or other frameworks.
-
-## Figma design file
-
-We have also built a free Figma design file that you can duplicate from the community website:
-
-👉 [Landwind Figma file](https://www.figma.com/community/file/1125744163617429490)
-
-## Built with Tailwind CSS and Flowbite
-
-This landing page was built using the following technologies:
-
-- 🔗 [Tailwind CSS](https://tailwindcss.com/)
-- 🔗 [Flowbite Library](https://flowbite.com/docs/getting-started/introduction/)
-- 🔗 [Flowbite Blocks](https://flowbite.com/blocks/)
-
-## About us
-
-We build free and premium themes with technologies such as Bootstrap, React, Tailwind, Vue, Laravel and more over at [Themesberg](https://themesberg.com).
-
-## License
-
-This project is open source under the MIT license.
+</details>
