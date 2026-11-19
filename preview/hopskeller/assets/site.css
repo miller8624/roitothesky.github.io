@@ -176,8 +176,7 @@ h2 { font-size: clamp(2.25rem, 4.55vw, 4.65rem); }
 .past-beers { margin-top: 2.2rem; border: 1px solid var(--line); padding: .9rem 1rem; background: var(--paper); }
 .past-beers summary { font-weight: 750; cursor: pointer; }
 .past-beers > p { margin-top: .6rem; color: var(--muted); }
-.fine-print { margin-block: 1.35rem 3rem; color: var(--muted); font-size: .9rem; max-width: 55rem; }
-.menu-content > .fine-print { margin-bottom: 0; padding-bottom: 3rem; }
+.fine-print { margin-top: 1.35rem; padding-bottom: 3rem; color: var(--muted); font-size: .9rem; max-width: 55rem; }
 
 .reading { width: min(100% - 96px, 840px); }
 .prose { overflow-wrap: anywhere; }
