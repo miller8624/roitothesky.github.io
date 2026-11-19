@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="arrow" viewBox="0 0 24 24">
+    <path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="mail" viewBox="0 0 48 48">
+    <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="5" y="12" width="38" height="25" rx="3"/>
+      <path d="m6 15 15 12a5 5 0 0 0 6 0l15-12M6 34l11-10m14 0 11 10M9 7h12m10 35h8"/>
+    </g>
+  </symbol>
+  <symbol id="pizza" viewBox="0 0 24 24">
+    <path d="m12 21-9-14a14 14 0 0 1 18 0l-9 14ZM5 10a11 11 0 0 1 14 0m-9 2h.01m4 1h.01m-2 3h.01" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="salad" viewBox="0 0 24 24">
+    <path d="M3 12h18a9 8 0 0 1-18 0ZM8 12a5 5 0 0 1-2-7c2 2 5 1 6 5m1 2c-1-4 1-7 5-8 1 4-1 6-3 8m-6 8h6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="snacks" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 5v4a3 3 0 0 0 6 0V5M6 5v15"/>
+      <circle cx="16" cy="12" r="5"/>
+      <path d="M14 12a2 2 0 0 0 2 2"/>
+    </g>
+  </symbol>
+  <symbol id="trophy" viewBox="0 0 24 24">
+    <path d="M7 4h10v5a5 5 0 0 1-10 0V4Zm0 2H3v2a4 4 0 0 0 5 4m9-6h4v2a4 4 0 0 1-5 4m-4 2v5m-4 1h8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="drop" viewBox="0 0 24 24">
+    <path d="M12 3c-2 4-6 8-6 12a6 6 0 0 0 12 0c0-4-4-8-6-12Zm-3 13c0 1 1 2 2 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="hop" viewBox="0 0 24 24">
+    <path d="M12 21C3 17 6 8 12 3c6 5 9 14 0 18Zm-5-9c2 2 4 3 5 7 1-4 3-5 5-7M9 7c2 2 3 4 3 7 0-3 1-5 3-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="us" viewBox="0 0 60 40">
+    <path fill="#fff8ed" d="M0 0h60v40H0z"/>
+    <path d="M0 1.54h60M0 7.69h60M0 13.85h60M0 20h60M0 26.15h60M0 32.31h60M0 38.46h60" stroke="#9e4c3c" stroke-width="3.08"/>
+    <path fill="#333d50" d="M0 0h25v21.54H0z"/>
+    <path d="M2 2h21m-21 4.4h21m-21 4.4h21m-21 4.4h21m-21 4.4h21M4 4.2h18m-18 4.4h18m-18 4.4h18m-18 4.4h18" stroke="#fff8ed" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0 4.1"/>
+  </symbol>
+  <symbol id="uk" viewBox="0 0 60 40">
+    <path fill="#333d50" d="M0 0h60v40H0z"/>
+    <path fill="#fff8ed" d="M0 0h6l54 34v6h-6L0 6zm60 0h-6L0 34v6h6L60 6z"/>
+    <path fill="#9e4c3c" d="M0 0l30 19v4L0 4zm60 40L30 21v-4l30 19zm0-40L30 19v-4L54 0zM0 40l30-19v4L6 40z"/>
+    <path d="M30 0v40M0 20h60" stroke="#fff8ed" stroke-width="12"/>
+    <path d="M30 0v40M0 20h60" stroke="#9e4c3c" stroke-width="7"/>
+  </symbol>
+</svg>

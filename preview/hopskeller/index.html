@@ -12,7 +12,7 @@
 <meta property="og:image" content="./assets/exterior.webp">
 
 <link rel="icon" href="./assets/favicon.png">
-<link rel="stylesheet" href="./assets/site.css">
+<link rel="stylesheet" href="./assets/site.css?v=768b480324">
 <script defer src="./assets/site.js"></script>
 </head>
 <body>
@@ -26,11 +26,11 @@
     <a href="https://ordering.chownow.com/order/21468/locations?add_cn_ordering_class=true" class="nav-order">Order online ↗</a>
   </div>
 </header>
-<main id="main">
+<main id="main" class="home-main">
 <section class="home-hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">Downtown Waterloo, Illinois</p>
+      <p class="eyebrow">In the heart of Downtown Waterloo, Illinois</p>
       <h1>Welcome to Hopskeller</h1>
       <p>English-inspired ales, wood-fired pizza, and a seat for you in the heart of downtown Waterloo.</p>
       <div class="actions"><a href="#menus" class="button">Explore the menus</a><a href="./contact/" class="button outline">Plan a visit</a></div>
@@ -50,26 +50,25 @@
 </div>
 <section class="section wrap" id="menus">
   <div class="section-head">
-    <h2>Explore our eats and what's on tap</h2>
+    <h2>Explore our eats <em>and what's on tap.</em></h2>
   </div>
   <div class="feature-grid">
-    <article class="feature-card">
-      <img src="./assets/pizza.webp" alt="A freshly baked Hopskeller pizza" loading="lazy" decoding="async">
-      <div>
-        <h3>Wood-fired pizza</h3>
-        <p>Handmade pizzas from our brick oven, plus shareables, salads, and brewpub favorites.</p>
-        <a href="./eat/" class="text-link">View the food menu</a>
-      </div>
-    </article>
-    <article class="feature-card">
-      <img src="./assets/flight.webp" alt="A flight of Hopskeller beers" loading="lazy" decoding="async">
-      <div>
-        <h3>Beer brewed here</h3>
-        <p>Start with a flight of house beers inspired by Northern England and the Pacific Northwest.</p>
-        <a href="./drink/" class="text-link">See what’s on tap</a>
-        <a href="./brews/" class="text-link">Explore our beers</a>
-      </div>
-    </article>
+
+<a class="feature-card" href="./eat/" aria-label="Wood-fired pizza and food menu">
+  <img src="./assets/pizza.webp" alt="" loading="lazy" decoding="async">
+  <div class="feature-caption">
+    <div><h3>Wood-fired pizza</h3><p>Handmade pies from our brick oven.</p></div>
+    <span class="feature-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons.svg#arrow"></use></svg></span>
+  </div>
+</a>
+
+<a class="feature-card" href="./drink/" aria-label="Beer brewed here and drink menu">
+  <img src="./assets/flight.webp" alt="" loading="lazy" decoding="async">
+  <div class="feature-caption">
+    <div><h3>Beer brewed here</h3><p>See what’s on tap in downtown Waterloo.</p></div>
+    <span class="feature-arrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons.svg#arrow"></use></svg></span>
+  </div>
+</a>
   </div>
 </section>
 <section class="specials">
@@ -90,15 +89,16 @@
     <a href="./events/" class="text-link">See events at Hopskeller</a>
   </div>
   <div class="subscribe">
+    <span class="mail-mark"><svg class="icon" aria-hidden="true" focusable="false"><use href="./assets/icons.svg#mail"></use></svg></span>
     <h3>Hear what’s happening at Hopskeller</h3>
     <p>Get updates on new beers, brewpub news, and upcoming events.</p>
     <a href="./mailing-list/" class="button">Join the mailing list</a>
   </div>
 </section>
-<section class="section wrap story-grid">
+<section class="section wrap story-grid home-story">
   <figure class="story-picture"><img src="./assets/interior.webp" alt="Reclaimed wood, old brick, and the bar inside Hopskeller" loading="lazy" decoding="async"></figure>
   <div>
-    <p class="eyebrow">Our story</p><h2>A Waterloo house<br>with a second life.</h2>
+    <p class="eyebrow">Our story</p><h2>A Waterloo house with a second life.</h2>
     <p>Matt Schweizer’s homebrews grew into a downtown gathering place in a house built in 1854. Inside, you’ll find old barn wood, Victorian doors, and ironwork from St. Louis’s McKinley Bridge.</p>
     <p>A fire closed the brewery shortly after it opened. The community helped bring it back, and we’ve been pouring beer here ever since.</p>
     <a href="./about/" class="text-link">Read the Hopskeller story ↗</a>
@@ -128,7 +128,7 @@
       <a href="tel:+16189392337">(618) 939-2337</a>
     </div>
     <div><h2>Brewpub hours</h2><dl class="hours"><div><dt>Monday</dt><dd>Closed</dd></div><div><dt>Tuesday–Thursday</dt><dd>4–10 p.m.</dd></div><div><dt>Friday–Saturday</dt><dd>Noon–11 p.m.</dd></div><div><dt>Sunday</dt><dd>Noon–9 p.m.</dd></div></dl></div>
-    <div><h2>Explore</h2><nav aria-label="Footer navigation"><a href="./eat/">Food menu</a><a href="./drink/">Drink menu</a><a href="./brews/">Our beers</a><a href="./events/">Private events</a><a href="./blog/">Journal</a><a href="./gift-cards/">Gift cards</a><a href="./local-vendors/">Local vendors</a><a href="./mailing-list/">Mailing list</a></nav></div>
+    <div><h2>Explore</h2><nav aria-label="Footer navigation"><a href="./eat/">Food menu</a><a href="./drink/">Drink menu</a><a href="./events/">Private events</a><a href="./blog/">Journal</a><a href="./gift-cards/">Gift cards</a><a href="./local-vendors/">Local vendors</a><a href="./mailing-list/">Mailing list</a></nav></div>
   </div>
   <div class="wrap footer-end">
     <span>© Hopskeller Brewing Company</span>
