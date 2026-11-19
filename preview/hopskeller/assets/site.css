@@ -128,7 +128,7 @@ h2 { font-size: clamp(2.25rem, 4.55vw, 4.65rem); }
 .page-head { padding-block: clamp(2.9rem, 7.2vw, 6.6rem) clamp(2.4rem, 5vw, 4.7rem); }
 .page-head h1, .post h1 { font-size: clamp(2.95rem, 7.2vw, 7rem); overflow-wrap: anywhere; }
 .page-head .eyebrow, .post .eyebrow { color: var(--copper); }
-.page-head h1 + p { color: var(--muted); font-size: clamp(1.05rem, 1.5vw, 1.28rem); max-width: 38rem; margin-top: 1rem; }
+.page-head h1 + p { color: var(--muted); font-size: clamp(1.05rem, 1.5vw, 1.28rem); max-width: 38rem; margin-top: 1rem; text-wrap: pretty; }
 .split-head { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(1.5rem, 5vw, 5rem); align-items: center; }
 .split-head .page-picture img { aspect-ratio: 1.53; object-fit: cover; background: var(--cream); }
 .split-head .page-picture img[src*="/gift-"] { aspect-ratio: 1.35; object-fit: contain; }
@@ -148,7 +148,7 @@ h2 { font-size: clamp(2.25rem, 4.55vw, 4.65rem); }
 .pairing-guide { display: grid; gap: .6rem; margin: 1.55rem 0 1.9rem; padding: 1rem 1.2rem; background: var(--paper); border-left: 3px solid var(--copper); font-size: .92rem; }
 .pairing-key { display: flex; flex-wrap: wrap; gap: .5rem 1.15rem; }
 .pairing-key > span { display: inline-flex; align-items: center; gap: .35rem; }
-.pairing-key .icon, .beer-notes .icon { color: var(--copper); }
+.pairing-key .icon, .beer-notes .icon, .food-pairings .icon, .food-pairing-key .icon { color: var(--copper); }
 .beer-key { color: var(--muted); margin: 0; }
 .beer-group { display: flex; align-items: center; gap: .75rem; font-size: .92rem; padding: .8rem 1rem; background: var(--cream); }
 .beer-group:not(:first-of-type) { margin-top: 2.15rem; }
@@ -159,11 +159,22 @@ h2 { font-size: clamp(2.25rem, 4.55vw, 4.65rem); }
 .beer-stats > span { display: inline-flex; align-items: center; gap: .3rem; padding: .12rem .42rem; background: var(--paper); border: 1px solid var(--line); }
 .beer-stats small { font-size: .76rem; }
 .beer-stats .icon { color: var(--copper); }
-.beer-notes { display: grid; gap: .35rem; margin: .75rem 0 0; padding: 0; list-style: none; color: var(--muted); font-size: .9rem; }
+.tasting-notes { margin-top: .55rem; font-size: .9rem; }
+.tasting-notes summary { width: fit-content; cursor: pointer; font-weight: 750; list-style-position: inside; text-decoration: underline; }
+.tasting-notes summary::marker { color: var(--copper); }
+.tasting-notes blockquote { margin: .65rem 0 0; padding: .45rem .85rem .55rem; background: var(--paper); border-left: 2px solid var(--copper); }
+.tasting-notes cite { display: block; margin-top: .45rem; font-style: normal; font-weight: 750; color: var(--ink); }
+.beer-notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .35rem 1rem; margin: .75rem 0 0; padding: 0; list-style: none; color: var(--muted); font-size: .9rem; }
 .beer-notes li { display: flex; align-items: baseline; gap: .5rem; }
 .beer-notes li > .icon { align-self: start; margin-top: .17rem; }
 .beer-notes span { font-weight: 500; }
+.beer-notes li:only-child, .beer-notes .beer-award { grid-column: 1 / -1; }
 .beer-notes .beer-award { color: var(--ink); }
+.food-pairing-key { display: flex; align-items: baseline; gap: .55rem; }
+.menu-item > .food-pairings { display: grid; grid-template-columns: max-content 1fr; gap: .5rem; align-items: start; margin-top: .65rem; color: var(--muted); font-size: .9rem; }
+.food-pairings .icon { margin-top: .15rem; }
+.food-pairings ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .13rem 1rem; margin: 0; padding: 0; list-style: none; }
+.food-pairings li:only-child { grid-column: 1 / -1; }
 .past-beers { margin-top: 2.2rem; border: 1px solid var(--line); padding: .9rem 1rem; background: var(--paper); }
 .past-beers summary { font-weight: 750; cursor: pointer; }
 .past-beers > p { margin-top: .6rem; color: var(--muted); }
@@ -266,8 +277,10 @@ h2 { font-size: clamp(2.25rem, 4.55vw, 4.65rem); }
   .calendar-card { max-width: 15rem; }
   .calendar-card img { max-width: 12rem; }
   .building-history figure { width: 41%; margin-left: 1rem; }
+  .building-history + .actions .button { padding-inline: .7rem; }
   .site-header .eyebrow, .eyebrow { font-size: .68rem; }
   .menu-items, .gift-grid, .journal-grid { grid-template-columns: 1fr; }
+  .beer-notes, .food-pairings ul { grid-template-columns: 1fr; }
   .menu-label { padding-top: 1.4rem; }
   .gallery { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
