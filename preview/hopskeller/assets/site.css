@@ -170,15 +170,14 @@ h2 { font-size: clamp(2.25rem, 4.55vw, 4.65rem); }
 .beer-notes span { font-weight: 500; }
 .beer-notes li:only-child, .beer-notes .beer-award { grid-column: 1 / -1; }
 .beer-notes .beer-award { color: var(--ink); }
-.food-pairing-key { display: flex; align-items: baseline; gap: .55rem; }
-.menu-item > .food-pairings { display: grid; grid-template-columns: max-content 1fr; gap: .5rem; align-items: start; margin-top: .65rem; color: var(--muted); font-size: .9rem; }
-.food-pairings .icon { margin-top: .15rem; }
-.food-pairings ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .13rem 1rem; margin: 0; padding: 0; list-style: none; }
+.food-pairing-key, .food-pairings li { display: flex; align-items: center; gap: .55rem; }
+.food-pairings { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .13rem 1rem; margin: .65rem 0 0; padding: 0; list-style: none; color: var(--muted); font-size: .9rem; }
 .food-pairings li:only-child { grid-column: 1 / -1; }
 .past-beers { margin-top: 2.2rem; border: 1px solid var(--line); padding: .9rem 1rem; background: var(--paper); }
 .past-beers summary { font-weight: 750; cursor: pointer; }
 .past-beers > p { margin-top: .6rem; color: var(--muted); }
 .fine-print { margin-block: 1.35rem 3rem; color: var(--muted); font-size: .9rem; max-width: 55rem; }
+.menu-content > .fine-print { margin-bottom: 0; padding-bottom: 3rem; }
 
 .reading { width: min(100% - 96px, 840px); }
 .prose { overflow-wrap: anywhere; }
@@ -280,7 +279,7 @@ h2 { font-size: clamp(2.25rem, 4.55vw, 4.65rem); }
   .building-history + .actions .button { padding-inline: .7rem; }
   .site-header .eyebrow, .eyebrow { font-size: .68rem; }
   .menu-items, .gift-grid, .journal-grid { grid-template-columns: 1fr; }
-  .beer-notes, .food-pairings ul { grid-template-columns: 1fr; }
+  .beer-notes, .food-pairings { grid-template-columns: 1fr; }
   .menu-label { padding-top: 1.4rem; }
   .gallery { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
