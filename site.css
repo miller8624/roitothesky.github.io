@@ -539,3 +539,9 @@ h2 {
 .newsletter-button:hover { background: #183aa1; }
 .newsletter-note { color: var(--muted); font-size: .83rem; }
 @media (max-width: 660px) { .newsletter-panel { grid-template-columns: 1fr; } }
+
+.newsletter-thanks { margin-bottom: clamp(36px, 6vw, 76px); }
+.newsletter-thanks h1 {
+  font: 800 clamp(2.25rem, 6vw, 5rem)/1.05 var(--heading);
+  letter-spacing: -.055em;
+}
