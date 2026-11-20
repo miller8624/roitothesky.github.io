@@ -334,8 +334,8 @@ h2 {
 .services .section-label { color: #c6d7ff; }
 .services .section-intro > p { color: #e5edff; }
 .services .service-grid article { color: var(--ink); }
-.services .service-grid article, .pricing-card { transition: transform .22s ease, box-shadow .22s ease; }
-.services .service-grid article:hover, .pricing-card:hover { transform: translateY(-4px); box-shadow: 0 14px 28px #0b174227; }
+.services .service-grid article { transition: transform .22s ease, box-shadow .22s ease; }
+.services .service-grid article:hover { transform: translateY(-4px); box-shadow: 0 14px 28px #0b174227; }
 .service-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
 .service-grid article { padding: clamp(17px, 2.15vw, 29px); background: #fff; border: 1px solid #e0e5f0; border-radius: 11px; }
 .service-grid h3 { font-size: 1.15rem; letter-spacing: -.045em; line-height: 1.19; margin-top: 20px; }
@@ -369,7 +369,8 @@ h2 {
 
 .site-footer { min-height: 112px; display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
 .site-footer p { font-size: .86rem; color: var(--muted); }
-.footer-credit { display: flex; align-items: center; gap: clamp(7px, 2vw, 16px); white-space: nowrap; }
+.site-footer .footer-credit { display: flex; align-items: center; gap: clamp(7px, 2vw, 16px); white-space: nowrap; }
+.footer-separator { color: var(--blue); }
 .footer-georgia { display: flex; align-items: center; gap: 6px; }
 .georgia-icon { width: 13px; height: 15px; flex: none; background: currentColor; clip-path: polygon(3% 2%, 52% 2%, 49% 13%, 62% 23%, 69% 35%, 82% 43%, 88% 57%, 98% 66%, 90% 79%, 88% 97%, 73% 99%, 73% 91%, 20% 91%, 17% 79%, 20% 66%, 13% 53%, 12% 39%, 7% 24%); }
 
@@ -451,7 +452,7 @@ h2 {
   .contact-address { margin-left: 0; display: block; }
   .site-footer { padding-block: 21px; gap: 10px 16px; }
   .footer-credit { flex-basis: 100%; order: 1; }
-  .footer-credit p { font-size: clamp(.65rem, 2.5vw, .86rem); }
+  .site-footer .footer-credit { font-size: clamp(.625rem, 2.5vw, .86rem); }
 }
 
 @media (max-width: 360px) {
@@ -468,15 +469,34 @@ h2 {
 }
 
 .pricing { padding-top: 0; }
-.pricing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-.pricing-card { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: clamp(22px, 4vw, 46px); border: 1px solid var(--rule); border-radius: 16px; background: #fff; }
-.pricing-card-retainer { background: linear-gradient(140deg, #edf3ff, #f3efff); border-color: #d3ddf6; }
-.pricing-card h3 { font-size: 1.2rem; }
-.pricing-card p:not(.pricing-rate) { color: var(--muted); max-width: 42ch; }
-.pricing-rate { font: 800 clamp(1.75rem, 4vw, 3rem)/1.1 var(--heading); letter-spacing: -.055em; }
-.pricing-button { margin-top: auto; background: var(--blue); color: #fff; }
-.pricing-button:hover { background: #183aa1; }
+.pricing-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 2.5vw, 32px); }
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  min-height: 290px;
+  padding: clamp(26px, 4vw, 48px);
+  border: 1px solid #343f61;
+  border-radius: 20px;
+  color: #f5f7ff;
+  background: radial-gradient(ellipse at 100% 0%, #273b71, transparent 67%), #111827;
+  box-shadow: 0 12px 30px #11182726;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.pricing-card-retainer {
+  background: radial-gradient(ellipse at 100% 0%, #443581, transparent 74%), #15182d;
+}
+.pricing-card h3 { font-size: 1.2rem; letter-spacing: -.025em; }
+.pricing-card p:not(.pricing-rate) { color: #dbe3f9; max-width: 42ch; }
+.pricing-rate { font: 800 clamp(1.9rem, 4vw, 3.2rem)/1.1 var(--heading); letter-spacing: -.055em; }
+.pricing-button { margin: auto 0 0; background: #f2f5ff; color: #142449; }
+.pricing-button:hover { background: #dce6ff; }
 @media (max-width: 660px) { .pricing-grid { grid-template-columns: 1fr; } }
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .pricing-card:hover { transform: perspective(900px) translateY(-6px) rotateX(2deg) rotateY(-2deg); box-shadow: 0 22px 44px #11182740; }
+  .pricing-card-retainer:hover { transform: perspective(900px) translateY(-6px) rotateX(2deg) rotateY(2deg); }
+}
 @media (prefers-reduced-motion: reduce) {
-  .brand:is(:hover, :focus-visible) img, .services .service-grid article:hover, .pricing-card:hover { transform: none; }
+  .brand:is(:hover, :focus-visible) img, .services .service-grid article:hover { transform: none; }
 }
