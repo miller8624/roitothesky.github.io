@@ -545,3 +545,32 @@ h2 {
   font: 800 clamp(2.25rem, 6vw, 5rem)/1.05 var(--heading);
   letter-spacing: -.055em;
 }
+
+.team-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 3vw, 26px);
+  padding: clamp(18px, 3vw, 32px);
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  background: #fff;
+}
+.team-card img {
+  width: clamp(70px, 9vw, 116px);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  flex: none;
+}
+.team-card h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); line-height: 1.2; }
+.team-card p { color: var(--muted); font-size: .93rem; margin-top: 4px; }
+.team-card .team-role { color: var(--blue); font-weight: 700; }
+@media (max-width: 660px) { .team-grid { grid-template-columns: 1fr; } }
