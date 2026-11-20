@@ -508,3 +508,34 @@ h2 {
 @media (prefers-reduced-motion: reduce) {
   .brand:is(:hover, :focus-visible) img { transform: none; }
 }
+
+.newsletter { margin-bottom: clamp(36px, 6vw, 76px); }
+.newsletter-panel {
+  display: grid;
+  grid-template-columns: 1.18fr 1fr;
+  align-items: center;
+  gap: clamp(24px, 5vw, 72px);
+  padding: clamp(24px, 5vw, 64px);
+  border: 1px solid #d4dff8;
+  border-radius: 20px;
+  background: radial-gradient(ellipse at 100% 0%, #e4ddff, transparent 65%), #edf3ff;
+}
+.newsletter-copy h2 { font-size: clamp(2rem, 4.3vw, 3.8rem); }
+.newsletter-copy > p:last-child { color: var(--muted); margin-top: 16px; max-width: 48ch; }
+.newsletter-form { display: grid; gap: 12px; min-width: 0; }
+.newsletter-field { display: grid; gap: 4px; }
+.newsletter-field label { font-size: .9rem; font-weight: 700; }
+.newsletter-field input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid #9baac6;
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
+}
+.newsletter-button { justify-self: start; background: var(--blue); color: #fff; border: 0; cursor: pointer; font-family: inherit; }
+.newsletter-button:hover { background: #183aa1; }
+.newsletter-note { color: var(--muted); font-size: .83rem; }
+@media (max-width: 660px) { .newsletter-panel { grid-template-columns: 1fr; } }
