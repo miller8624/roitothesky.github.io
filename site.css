@@ -370,6 +370,8 @@ h2 {
 
 .site-footer { min-height: 112px; display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
 .site-footer p { font-size: .86rem; color: var(--muted); }
+.footer-georgia { display: flex; align-items: center; gap: 6px; }
+.georgia-icon { width: 13px; height: 15px; flex: none; background: currentColor; clip-path: polygon(3% 2%, 52% 2%, 49% 13%, 62% 23%, 69% 35%, 82% 43%, 88% 57%, 98% 66%, 90% 79%, 88% 97%, 73% 99%, 73% 91%, 20% 91%, 17% 79%, 20% 66%, 13% 53%, 12% 39%, 7% 24%); }
 
 .case-main { padding-top: 26px; }
 .case-back { margin: 0 0 30px; }
@@ -448,7 +450,7 @@ h2 {
   .case-back { margin-bottom: 22px; }
   .contact-address { margin-left: 0; display: block; }
   .site-footer { padding-block: 21px; gap: 10px 16px; }
-  .site-footer > p { margin-left: auto; }
+  .footer-credit { margin-left: auto; }
 }
 
 @media (max-width: 360px) {
